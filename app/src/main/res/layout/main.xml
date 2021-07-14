@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5B5B5"
+    android:orientation="vertical"
+    tools:context=".Main">
+
+    <ImageView
+        android:layout_width="970px"
+        android:layout_height="350px"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/getnews"
+        android:scaleType="fitXY" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/Politics"
+                android:layout_width="460px"
+                android:layout_height="700px"
+                android:layout_marginLeft="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/politics" />
+
+            <ImageButton
+                android:id="@+id/Economy"
+                android:layout_width="460px"
+                android:layout_height="700px"
+                android:layout_marginLeft="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/economy" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/Society"
+                android:layout_width="460px"
+                android:layout_height="700px"
+                android:layout_marginLeft="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/society" />
+
+            <ImageButton
+                android:id="@+id/IT"
+                android:layout_width="460px"
+                android:layout_height="700px"
+                android:layout_marginLeft="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/it" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

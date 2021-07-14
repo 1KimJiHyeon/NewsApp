@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myandroid.kimJH_60181628">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Get News"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+
+        <activity android:name="com.myandroid.kimJH_60181628.ListPolitics" />
+        <activity android:name="com.myandroid.kimJH_60181628.EditPolitics" />
+        <activity android:name="com.myandroid.kimJH_60181628.ViewPolitics" />
+        <activity android:name="com.myandroid.kimJH_60181628.CreatePolitics" />
+
+        <activity android:name="com.myandroid.kimJH_60181628.ListEconomy" />
+        <activity android:name="com.myandroid.kimJH_60181628.EditEconomy" />
+        <activity android:name="com.myandroid.kimJH_60181628.ViewEconomy" />
+        <activity android:name="com.myandroid.kimJH_60181628.CreateEconomy" />
+
+        <activity android:name="com.myandroid.kimJH_60181628.ListSociety" />
+        <activity android:name="com.myandroid.kimJH_60181628.EditSociety" />
+        <activity android:name="com.myandroid.kimJH_60181628.ViewSociety" />
+        <activity android:name="com.myandroid.kimJH_60181628.CreateSociety" />
+
+        <activity android:name="com.myandroid.kimJH_60181628.ListIT" />
+        <activity android:name="com.myandroid.kimJH_60181628.EditIT" />
+        <activity android:name="com.myandroid.kimJH_60181628.ViewIT" />
+        <activity android:name="com.myandroid.kimJH_60181628.CreateIT" />
+
+        <activity android:name="com.myandroid.kimJH_60181628.Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.myandroid.kimJH_60181628.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
